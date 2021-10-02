@@ -1,0 +1,57 @@
+Script started on Fri Oct  1 13:32:08 2021
+[1m[7m%[27m[1m[0m                                                                                                                                                [0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+ [K[?1h=[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?2004hscript./a.outg++ -std=c++17 ./ex2-1.cpp[26D./a.out                   [19Dg++ -std=c++17 ./ex2-1.cpp[?1l>[?2004l[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ g++ -std=c++17 ./ex2-1.cpp[K
+[1m[7m%[27m[1m[0m                                                                                                                                                [0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?1h=[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?2004hg++ -std=c++17 ./ex2-1.cpp[26Dscript                    [20D./a.out[?1l>[?2004l[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ ./a.out[K
+Input integers: 9 -5
+One of integers is negative.[1m[7m%[27m[1m[0m                                                                                                                                                [0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?1h=[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?2004h./a.out[?1l>[?2004l[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ ./a.out[K
+Input integers: 2 5
+32[1m[7m%[27m[1m[0m                                                                                                                                                [0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?1h=[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?2004h./a.out[?1l>[?2004l[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ ./a.out[K
+Input integers: 2 10
+1024[1m[7m%[27m[1m[0m                                                                                                                                                [0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?1h=[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?2004h./a.out[?1l>[?2004l[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ ./a.out[K
+Input integers: -2 4
+One of integers is negative.[1m[7m%[27m[1m[0m                                                                                                                                                [0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?1h=[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?2004h./a.out[?1l>[?2004l[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ ./a.out[K
+Input integers: -3 -4
+One of integers is negative.[1m[7m%[27m[1m[0m                                                                                                                                                [0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?1h=[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ [K[?2004heexit[?1l>[?2004l[A[A[0m[27m[24m[J
+[38;5;135myanagisawakai[39m at [38;5;166myanagisawakainoMacBook-Air[39m in [38;5;118m~/college/college_cppI/week2-2[39m ([38;5;81mmaster[39m[38;5;161m●[39m)
+$ exit[K
+
+Script done on Fri Oct  1 13:33:05 2021
