@@ -12,8 +12,8 @@ vector<vector<int> > matrix_product(vector<vector<int> > &vec1, vector<vector<in
 {
     int vec_size = vec1.size();
     vector<vector<int> > vec(vec_size, vector<int>(vec_size, 0));
-    for (int i = 0; i < vec1.size(); i++)
-        for (int j = 0; j < vec1[i].size(); j++)
+    for (int i = 0; i < vec_size; i++)
+        for (int j = 0; j < vec_size; j++)
             for (int k = 0; k < vec_size; k++)
                 vec[i][j] += vec1[i][k] * vec2[k][j];
     return vec;
