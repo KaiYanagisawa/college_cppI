@@ -1,0 +1,13 @@
+yuki    50.3    170.6
+haruto  87.4    182.3
+souta   65.2    176.2
+yuto    56.4    168.2
+haruki  83.2    165.3
+koki    75.2    173.5
+kaito   63.8    183.2
+takumi  72.6    172.3
+hayato  53.6    179.5
+syota   65.7    163.2
+taro    56.8    166.5
+ichiro  94.2    168.1
+jaiko   38.5    145.2
