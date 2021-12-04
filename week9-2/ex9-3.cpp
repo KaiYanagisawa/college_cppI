@@ -23,8 +23,7 @@ void print_title()  // 表示の際の先頭行の各項目のタイトル表示
 void print(Member m)  //引数の一人分の会員mのデータを表示   
 {
 // (10)  mの氏名，体重，身長，BMI, 判定を全て幅10文字で表示． print_title()を参考にせよ
-
-
+cout << setw(10) << m.name << setw(10) << m.weight << setw(10) << m.height << setw(10) << m.bmi << setw(10) << m.hantei << "\n";
 }
 
 int main()
@@ -32,7 +31,11 @@ int main()
   // １．会員データファイルmembers.txtをリードでopen, 
   std::ifstream fin("members.txt");
   //  (1)  finファイルのエラーチェックを行い．エラーの場合にはプログラム終了 （main関数は１を返す）
-
+  if (!fin)
+  {
+    cerr << "cannot open file\n";
+    return 1;
+  }
 
   //ファイル名の表示 
   cout<<"Input file name = members.txt\n";
@@ -41,16 +44,20 @@ int main()
   std::vector<Member> members;  // 会員データの配列
   Member m;  //一人分の会員データm
 
-
-  while( /*            (2)           */ ) // (2) finファイルから一人分の名前，体重，身長をmに読む
+  while (fin >> m.name >> m.weight >> m.height) // (2) finファイルから一人分の名前，体重，身長をmに読む
   {                                       //  ファイルの終わり(EOF)まで，このwhileは繰り返される
 
-    //             (3)             // (3) BMIを計算し，mに設定
+    m.bmi = m.weight / (m.height / 100 * m.height / 100); // (3) BMIを計算し，mに設定
 
-    //              (4)            // (4) BMI値から，判定をmに設定
+    // (4) BMI値から，判定をmに設定
+    if (m.bmi >= 25)
+      m.hantei = "FAT";
+    else if (m.bmi < 18.5)
+      m.hantei = "LEAN";
+    else
+      m.hantei = "STANDARD";
 
-   //              (5)            //  (5) 会員データmを会員データベース配列membersに加える
-
+    members.push_back(m); //  (5) 会員データmを会員データベース配列membersに加える
   }
 // 3．カテゴリー入力と表示の繰り返し
  std::string category;  //表示したい会員のカテゴリもしくは，プログラム中止のためのQuit
@@ -64,21 +71,40 @@ int main()
     if( category == "QUIT" )  break;    // QUITの時はbreakでwhile終了．
 					// または，return 0; で，main終了でもいい
 
-    else if (/*     (6)     */ ){      // (6) ALLの時 全員の表示
+    else if (category == "ALL")
+    { // (6) ALLの時 全員の表示
 
-        cout<<"-------- " << category <<" Members list\n";  //表示するカテゴリの表示
-        print_title();    // 各項目のタイトル表示
+      cout << "-------- " << category << " Members list\n"; //表示するカテゴリの表示
+      print_title();                                        // 各項目のタイトル表示
 
-    //            (7)            // (7) membersの全員のデータを表示 print関数利用
-
+      // (7) membersの全員のデータを表示 print関数利用
+      for (auto mem : members)
+        print(mem);
     }
-    else if( /*           (8)             */ ) // (8)表示肥満度指定の時
+    else if (category == "FAT" || category == "STANDARD" || category == "LEAN") // (8)表示肥満度指定の時
     {
         cout<<"-------- " << category <<" Members list\n";  //表示するカテゴリの表示
         print_title();    // 各項目のタイトル表示
 
-        //             (9)            // (9) membersの該当カテゴリの会員データを表示print関数利用
-
+        // (9) membersの該当カテゴリの会員データを表示print関数利用
+        for (auto mem : members)
+        {
+          if (category == "FAT")
+          {
+            if (mem.hantei == "FAT")
+              print(mem);
+          }
+          else if (category == "STANDARD")
+          {
+            if (mem.hantei == "STANDARD")
+              print(mem);
+          }
+          else if (category == "LEAN")
+          {
+            if (mem.hantei == "LEAN")
+              print(mem);
+          }
+        }
     }
     else  //指定した単語以外の入力の時は，再度入力に戻る
         cout<<"category input error! input again!\n";     
