@@ -1,4 +1,5 @@
-// ex9-3_skel.cpp
+// S202148 柳澤快
+//  ex9-3_skel.cpp
 
 #include<iostream>
 #include<iomanip>
