@@ -89,21 +89,12 @@ int main()
         // (9) membersの該当カテゴリの会員データを表示print関数利用
         for (auto mem : members)
         {
-          if (category == "FAT")
-          {
-            if (mem.hantei == "FAT")
-              print(mem);
-          }
-          else if (category == "STANDARD")
-          {
-            if (mem.hantei == "STANDARD")
-              print(mem);
-          }
-          else if (category == "LEAN")
-          {
-            if (mem.hantei == "LEAN")
-              print(mem);
-          }
+          if (category == "FAT" && mem.hantei == "FAT")
+            print(mem);
+          else if (category == "STANDARD" && mem.hantei == "STANDARD")
+            print(mem);
+          else if (category == "LEAN" && mem.hantei == "LEAN")
+            print(mem);
         }
     }
     else  //指定した単語以外の入力の時は，再度入力に戻る
@@ -113,6 +104,3 @@ int main()
 
  return 0;
 }
-
-
-

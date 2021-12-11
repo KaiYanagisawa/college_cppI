@@ -1,5 +1,5 @@
 // S202148 柳澤快
-//  ex9-3_skel.cpp
+//  ex9-2_skel.cpp
 
 #include <iostream>
 # include <cmath>   // 実数の絶対値を返すfabs（）を利用可能にする
